@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj",
       "projectName": "ProjetoVSCode",
-      "projectPath": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj",
+      "projectPath": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj",
       "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\obj\\",
+      "outputPath": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
