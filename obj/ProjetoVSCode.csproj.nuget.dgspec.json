@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj": {}
+    "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj": {
+    "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj",
+        "projectUniqueName": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj",
         "projectName": "ProjetoVSCode",
-        "projectPath": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\ProjetoVSCode.csproj",
+        "projectPath": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\ProjetoVSCode.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\source\\repos\\ProjetoVSCode\\obj\\",
+        "outputPath": "C:\\Users\\carlo\\source\\repos\\OOPLojaConstrucao\\CSharpTreinando-OOP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",

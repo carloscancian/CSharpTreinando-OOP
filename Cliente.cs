@@ -45,11 +45,11 @@ namespace ProjetoVSCode
         
         public bool VenderFiado(double valor)
         {
-          if (this._devendo > 25.5 )
+          if (this.Devendo > 25.5 )
           {
               return false;
           }
-          this._devendo += valor;
+          this.Devendo += valor;
           return true;
         } 
     }
