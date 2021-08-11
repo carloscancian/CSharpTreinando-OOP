@@ -1,6 +1,6 @@
 namespace ProjetoVSCode.Funcionarios
 {
-      interface IFuncionario
+      interface ISalario
     {
         bool AumentarSalario();
     }

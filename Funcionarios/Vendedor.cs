@@ -1,7 +1,7 @@
 using ProjetoVSCode;
 namespace ProjetoVSCode.Funcionarios
 {
-    public class Vendedor : Funcionario, IFuncionario
+    public class Vendedor : Funcionario, ISalario
     {
         public Vendedor(double salario, int codPessoaV) : base(salario, codPessoaV)
         {
@@ -9,11 +9,11 @@ namespace ProjetoVSCode.Funcionarios
 
         public bool AumentarSalario()
         {
-            if (this.VendaSemeste < 2000.0)
+            if (VendaSemeste < 2000.0)
               {
                   return false;
               }
-              this.Salario = Salario + Salario * 0.10;
+              Salario = Salario + Salario * 0.10;
               return true;
         }
     }      
