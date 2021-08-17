@@ -1,3 +1,4 @@
+using System;
 using ProjetoVSCode;
 namespace ProjetoVSCode.Funcionarios
 {
@@ -9,12 +10,21 @@ namespace ProjetoVSCode.Funcionarios
 
         public bool AumentarSalario()
         {
-            if (VendaSemeste < 2000.0)
+            try
+            {
+             if (VendaSemeste < 2000.0)
               {
                   return false;
               }
-              Salario = Salario + Salario * 0.10;
+              Salario += Salario * 0.10;
               return true;
+            }
+            catch (Exception e)
+            {
+               Console.WriteLine(e.Message);
+               Console.WriteLine(e.StackTrace);
+               throw;
+            }  
         }
     }      
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using ProjetoVSCode.Materiais;
 using ProjetoVSCode.Funcionarios;
-
+using CSharpTreinando_OOP;
 
 namespace ProjetoVSCode
 {
@@ -49,18 +49,25 @@ namespace ProjetoVSCode
             Console.WriteLine("o Valor da Parafusosé de: R$ " + Parafusos1.Valor);
             Console.WriteLine("A quantidade desta Parafusosno estoque é de: " + Parafusos1.QuantEstoque);
 
-            Cliente cliente1 = new Cliente(87, 20.0);
+            Cliente cliente1 = new Cliente(87);
+            try 
+            {
 
+            
             cliente1.nome = "Maria";
             cliente1.endereco = "Rua das bergamotas";
             Console.WriteLine(cliente1.nome + " deve: " + cliente1.Devendo);
-            cliente1.VenderFiado(32);
-            bool resultadoVenderFiado = cliente1.VenderFiado(32);
+            cliente1.VenderFiado(-8);
+            }
+            catch(DevendoExeption ex)
+            {
+              Console.WriteLine(ex.Message);
+            }
+
 
             
             Console.WriteLine("O nome do cliente é: " + cliente1.nome);
             Console.WriteLine("O endereço de " + cliente1.nome + " é: " + cliente1.endereco);
-            Console.WriteLine("Maria pode comprar fiado? " + resultadoVenderFiado);
             Console.WriteLine(cliente1.nome + " agora deve: " + cliente1.Devendo);
 
             Vendedor vendedor1 = new Vendedor(1980,89);
@@ -88,8 +95,23 @@ namespace ProjetoVSCode
             Console.WriteLine("O salario do RepresentanteExterno é de : " +RepresentanteExterno1.Salario); 
 
            RepresentanteExterno1.AumentarSalario();
+            
+            Console.WriteLine("O novo salario doRepresentanteExterno após aumento de 50% é de:" +RepresentanteExterno1.Salario); 
 
-            Console.WriteLine("O novo salario doRepresentanteExterno após aumento de 50% é de:" +RepresentanteExterno1.Salario);            
+            
+             try
+             {
+                 Cliente cliente = new Cliente(0);
+             }
+             catch (ArgumentException e)
+             {
+                Console.WriteLine(e.Message); 
+                Console.WriteLine(e.ParamName);
+                
+             }
+            Console.ReadLine();
+
         }
     }
 }
+

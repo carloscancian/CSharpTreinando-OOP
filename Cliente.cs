@@ -1,26 +1,16 @@
+using System;
+using CSharpTreinando_OOP;
+
 namespace ProjetoVSCode
 {
     public class Cliente
     {
         public string nome{get; set;}
-        private int _codPessoa;
-        public int CodPessoa
-        {
-            get
-            {
-                return _codPessoa; 
-            }
-            set
-            {
-                if (value <= 0)
-                {
-                    return;
-                }
-                _codPessoa = value;
-            }
-        }
+        public int CodPessoa{get;}
         public string endereco {get; set;}
         private double _devendo;
+        public double Valor { get; }
+
         public double Devendo
         {
             get
@@ -36,21 +26,27 @@ namespace ProjetoVSCode
                 _devendo = value;
             }
         }
-
-        public Cliente(int codPessoa, double devendo )
-        {
+        public Cliente(int codPessoa)
+        { 
+            if (codPessoa <=0)
+            {
+               throw new ArgumentException("CodPessoa igual ou menor que 0",nameof(codPessoa)); 
+            }
             CodPessoa = codPessoa;
-            Devendo = devendo;
+           
         }
-        
-        public bool VenderFiado(double valor)
+        public void VenderFiado(double valor)
         {
-          if (this.Devendo > 25.5 )
+            
+          if (valor <= 0 )
           {
-              return false;
+              throw new DevendoExeption(valor);
           }
-          this.Devendo += valor;
-          return true;
+          else
+          {
+          _devendo += valor;
+          }
+          
         } 
     }
 }

@@ -19,10 +19,8 @@ namespace ProjetoVSCode.Materiais
                    return;
                }
                _codProduto = value;
-           }
-           
+           }  
        } 
-
        public string Marca{get; set;}
        public int QuantEstoque{get; set;}
        public double Valor{get; protected set;}
