@@ -8,9 +8,10 @@ namespace ProjetoVSCode
         public string nome{get; set;}
         public int CodPessoa{get;}
         public string endereco {get; set;}
-        private double _devendo;
         public double Valor { get; }
 
+        private double _devendo;
+        
         public double Devendo
         {
             get
@@ -42,10 +43,8 @@ namespace ProjetoVSCode
           {
               throw new DevendoException(valor);
           }
-          else
-          {
-          _devendo += valor;
-          }
+            _devendo += valor;
+          
           
         } 
     }

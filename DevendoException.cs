@@ -16,7 +16,7 @@ namespace CSharpTreinando_OOP
 
         public double Devendo { get; }
 
-        public DevendoException(double devendo) : this ("Erro, valor devedor negativo!" + devendo)
+        public DevendoException(double devendo) : this ("Erro, valor devedor negativo: " + devendo)
         {
           Devendo = devendo;
         }

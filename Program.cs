@@ -56,8 +56,9 @@ namespace ProjetoVSCode
             
             cliente1.nome = "Maria";
             cliente1.endereco = "Rua das bergamotas";
+            cliente1.VenderFiado(25);
             Console.WriteLine(cliente1.nome + " deve: " + cliente1.Devendo);
-            cliente1.VenderFiado(-8);
+            
             }
             catch(DevendoException ex)
             {
