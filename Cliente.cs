@@ -40,7 +40,7 @@ namespace ProjetoVSCode
             
           if (valor <= 0 )
           {
-              throw new DevendoExeption(valor);
+              throw new DevendoException(valor);
           }
           else
           {

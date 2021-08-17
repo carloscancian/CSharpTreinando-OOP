@@ -59,7 +59,7 @@ namespace ProjetoVSCode
             Console.WriteLine(cliente1.nome + " deve: " + cliente1.Devendo);
             cliente1.VenderFiado(-8);
             }
-            catch(DevendoExeption ex)
+            catch(DevendoException ex)
             {
               Console.WriteLine(ex.Message);
             }
