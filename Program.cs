@@ -52,14 +52,13 @@ namespace ProjetoVSCode
             Cliente cliente1 = new Cliente(87);
             try 
             {
-
-            
             cliente1.nome = "Maria";
             cliente1.endereco = "Rua das bergamotas";
-            cliente1.VenderFiado(25);
-            Console.WriteLine(cliente1.nome + " deve: " + cliente1.Devendo);
-            
+            //Ativando a exception 
+            cliente1.VenderFiado(0);
+            Console.WriteLine(cliente1.nome + " deve: " + cliente1.Devendo); 
             }
+
             catch(DevendoException ex)
             {
               Console.WriteLine(ex.Message);

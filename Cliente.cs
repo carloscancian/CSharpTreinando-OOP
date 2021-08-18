@@ -43,9 +43,9 @@ namespace ProjetoVSCode
           {
               throw new DevendoException(valor);
           }
+          
             _devendo += valor;
-          
-          
+
         } 
     }
 }
